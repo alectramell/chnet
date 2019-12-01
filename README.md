@@ -1,4 +1,4 @@
-# CHNET v.10
+# CHNET v1.0
 ### Network Status Tester for Linux Terminal
 #### By Tramell Software Development (r)
 ### Usage (Linux Terminal)..
