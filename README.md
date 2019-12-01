@@ -1,10 +1,8 @@
 # CHNET v.10
+## Network Status Tester for Linux Terminal
+### By Tramell Software Development (r)
 #
-## Network Stats Tester for Linux Terminal
-#
-## By Tramell Software Development (r)
-#
-## Usage (navigate to prior directoy of chnet/__main__.py)..
-#
-	$ python chnet	
-#
+### Usage (Linux Terminal)..
+
+	$ git clone http://github.com/alectramell/chnet.git
+	$ python chnet
