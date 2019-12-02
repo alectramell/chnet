@@ -38,7 +38,7 @@ then
 	echo "${bold}${black}Your ${white}Network-Sub-IP-Address${black} is directed to you by ${green}$IPADDR${reset}"
 	echo "${bold}${black}Your ${white}Network-Speed${black} was measured at ${green}$(cat speedstats.txt) kbps ${white}(kilobytes per second)${reset}"
 	echo "${bold}${black}Your ${white}Network-Region${black} is located in ${gold}$REGION${reset}"
-	echo "${bold}${black}Your ${white}Network-Base-Coordinates${black} are ${gold}$LOCATE${reset}"
+	echo "${bold}${black}Your ${white}Network-Base-Coordinates${black} are ${green}$LOCATE${reset}"
 	echo "${bold}${black}Press ${red}[ANY-KEY] ${black}to exit..${reset}"
 	sleep 2.5
 else
