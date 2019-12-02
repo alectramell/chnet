@@ -28,11 +28,11 @@ mv speedstats.txt? speedstats.txt
 
 if [ "$CHSTAT" == "76656761" ]
 then
-	echo "Your Connection to the WORLD-WIDE-WEB is ACTIVE" > $(date +%d-%m-%Y-%S.netlog)
-	echo "Your Network-Sub-IP-Address is directed to you by $IPADDR" >> $(date +%d-%m-%Y-%S.netlog)
-	echo "Your Network-Speed was measured at $(cat speedstats.txt) kbps (kilobytes per second)" >> $(date +%d-%m-%Y-%S.netlog)
-	echo "Your Network-Region is located in $REGION" >> $(date +%d-%m-%Y-%S.netlog)
-	echo "Your Network-Base-Coordinates are $LOCATE" >> $(date +%d-%m-%Y-%S.netlog)
+	echo "Your Connection to the WORLD-WIDE-WEB is ACTIVE" > ../$(date +%d-%m-%Y-%S.netlog)
+	echo "Your Network-Sub-IP-Address is directed to you by $IPADDR" >> ../$(date +%d-%m-%Y-%S.netlog)
+	echo "Your Network-Speed was measured at $(cat speedstats.txt) kbps (kilobytes per second)" >> ../$(date +%d-%m-%Y-%S.netlog)
+	echo "Your Network-Region is located in $REGION" >> ../$(date +%d-%m-%Y-%S.netlog)
+	echo "Your Network-Base-Coordinates are $LOCATE" >> ../$(date +%d-%m-%Y-%S.netlog)
 
 	echo "${bold}${black}Your ${white}Connection${black} to the ${gold}world-wide-web${black} is ${green}active${reset}"
 	echo "${bold}${black}Your ${white}Network-Sub-IP-Address${black} is directed to you by ${green}$IPADDR${reset}"
@@ -42,11 +42,11 @@ then
 	echo "${bold}${black}Press ${red}[ANY-KEY] ${black}to exit..${reset}"
 	sleep 2.5
 else
-	echo "Your Connection to the WORLD-WIDE-WEB is ACTIVE" > $(date +%d-%m-%Y-%S.netlog)
-	echo "Your Network-Sub-IP-Address is UNKNOWN" >> $(date +%d-%m-%Y-%S.netlog)
-	echo "Your Network-Speed was measured at 0.00 kbps (kilobytes per second)" >> $(date +%d-%m-%Y-%S.netlog)
-	echo "Your Network-Region is UNKNOWN" >> $(date +%d-%m-%Y-%S.netlog)
-	echo "Your Network-Base-Coordinates are UNKNOWN" >> $(date +%d-%m-%Y-%S.netlog)
+	echo "Your Connection to the WORLD-WIDE-WEB is ACTIVE" > ../$(date +%d-%m-%Y-%S.netlog)
+	echo "Your Network-Sub-IP-Address is UNKNOWN" >> ../$(date +%d-%m-%Y-%S.netlog)
+	echo "Your Network-Speed was measured at 0.00 kbps (kilobytes per second)" >> ../$(date +%d-%m-%Y-%S.netlog)
+	echo "Your Network-Region is UNKNOWN" >> ../$(date +%d-%m-%Y-%S.netlog)
+	echo "Your Network-Base-Coordinates are UNKNOWN" >> ../$(date +%d-%m-%Y-%S.netlog)
 
 	echo "${bold}${black}Your ${white}connection${black} to the ${gold}world-wide-web${black} is ${red}inactive${reset}"
 	echo "${bold}${black}Your ${white}Network-Speed${black} was measured at ${red}0.00 kbps ${white}(kilobytes per second)${reset}"
